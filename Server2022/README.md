@@ -74,7 +74,7 @@ This file is where I define the variable names and types that `Server2022.build.
 Before you can run the build you need to fill out this file with the information from your environment. I committed `variableDefinitionFile.auto.pkrvars.hcl` without vaules as an example. You should consider using environment variables or passing sensitive variables like this and not store them in the file.
 
 ```dosbatch
-packer build -var "vcenter_username=administrator@vsphere.local" -var "vcenter_password=Jamey1!" -var "winrm_password=Jamey1!" .
+packer build -var "vcenter_username=administrator@vsphere.local" -var "vcenter_password=Jamey1!" -var "winrm_password=Jamey" .
 ```
 
 Also remember the WinRM username and password should match the local administrator account its what Packer uses to connect for customisation. 
